@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./FirstName.module.css";
 
-export default function FirstName() {
-  let prenom = "Samy";
+export default function FirstName({prenom}) {
   let isOnline = true;
 
   return (

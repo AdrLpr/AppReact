@@ -1,11 +1,11 @@
 import FirstName from "../FirstName/FirstName";
 import LastName from "../LastName/LastName";
 
-export default function FullName() {
+export default function FullName({prenom , nom}) {
   return (
     <div>
-      <FirstName />
-      <LastName />
+      <FirstName prenom={prenom}/>
+      <LastName nom={nom}/>
     </div>
   );
 }

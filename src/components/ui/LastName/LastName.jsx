@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function LastName() {
-  let nom = "Djemai";
+export default function LastName({nom}) {
   let isOnline = true;
 
   return (

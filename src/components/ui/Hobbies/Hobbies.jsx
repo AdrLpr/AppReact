@@ -1,13 +1,16 @@
 import React from "react";
 import s from "./Hobbies.module.css";
-export default function Hobbies() {
+export default function Hobbies({hobbies}) {
   return (
     <>
       <p className={s.titre_list}>Liste des compétences:</p>
       <ol className={s.list_container}>
-        <li>Programmation</li>
-        <li>Graphisme</li>
-        <li>Vidéos</li>
+          
+        {hobbies.map(function(element){
+          return <li>{element.hobby_name}</li>;
+          })}
+          
+        
       </ol>
     </>
   );
